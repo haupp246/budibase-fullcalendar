@@ -9,42 +9,42 @@
     "settings": [
       {
         "section": true,
-        "name": "Event Group 1",
+        "name": "Sự kiện 1",
         "settings": [
           {
             "type": "dataProvider",
-            "label": "DataProvider",
+            "label": "Nguồn dữ liệu",
             "key": "dataProvider",
             "required": true
           },
           {
             "type": "text",
             "key": "mappingTitle",
-            "label": "Title Mapping"
+            "label": "Ánh xạ nhãn"
           },
           {
             "type": "text",
             "key": "mappingDate",
-            "label": "Date Mapping"
+            "label": "Ánh xạ ngày"
           },
           {
             "type": "text",
             "key": "mappingStart",
-            "label": "Start Mapping"
+            "label": "Ánh xạ ngày bắt đầu"
           },
           {
             "type": "text",
             "key": "mappingEnd",
-            "label": "End Mapping"
+            "label": "Ánh xạ ngày kết thúc"
           },
           {
             "type": "boolean",
             "key": "allday",
-            "label": "AllDay Mapping"
+            "label": "Ánh xạ mọi ngày"
           },
           {
             "type": "color",
-            "label": "Color Mapping",
+            "label": "Ánh xạ màu",
             "key": "mappingColor",
             "defaultValue": "#272727"
           }
@@ -56,38 +56,38 @@
         "settings": [
           {
             "type": "dataProvider",
-            "label": "DataProvider",
+            "label": "Nguồn dữ liệu",
             "key": "dataProvider2",
             "required": false
           },
           {
             "type": "text",
             "key": "mappingTitle2",
-            "label": "Title Mapping"
+            "label": "Ánh xạ nhãn"
           },
           {
             "type": "text",
             "key": "mappingDate2",
-            "label": "Date Mapping"
+            "label": "Ánh xạ ngày"
           },
           {
             "type": "text",
             "key": "mappingStart2",
-            "label": "Start Mapping"
+            "label": "Ánh xạ ngày bắt đầu"
           },
           {
             "type": "text",
             "key": "mappingEnd2",
-            "label": "End Mapping"
+            "label": "Ánh xạ ngày kết thúc"
           },
           {
             "type": "boolean",
             "key": "allday2",
-            "label": "AllDay Mapping"
+            "label": "Ánh xạ mọi ngày"
           },
           {
             "type": "color",
-            "label": "Color Mapping",
+            "label": "Ánh xạ màu",
             "key": "mappingColor2",
             "defaultValue": "#000"
           }
@@ -95,23 +95,23 @@
       },
       {
         "section": true,
-        "name": "Header options",
+        "name": "Tùy chọn header",
         "settings": [
           {
             "type": "text",
-            "label": "Start Options",
+            "label": "Bên trái",
             "key": "headerOptionsStart",
             "defaultValue": "prev,next today"
           },
           {
             "type": "text",
-            "label": "Center Options",
+            "label": "Chính giữa",
             "key": "headerOptionsCenter",
             "defaultValue": "title"
           },
           {
             "type": "text",
-            "label": "End Options",
+            "label": "Bên phải",
             "key": "headerOptionsEnd",
             "defaultValue": "dayGridMonth,dayGridWeek,timeGridDay"
           }
@@ -124,22 +124,19 @@
             "type": "select",
             "key": "language",
             "options": [
-              "pt",
               "en",
-              "fr",
-              "es",
-              "ru"
+              "vi"
             ],
-            "label": "language",
-            "defaultValue": "pt"
+            "label": "Ngôn ngữ",
+            "defaultValue": "vi"
           },
           {
             "type": "event",
-            "label": "On Click",
+            "label": "Sự kiện click",
             "key": "calendarEvent",
             "context": [
               {
-                "label": "Clicked Event",
+                "label": "Sự kiện click",
                 "key": "value"
               }
             ]

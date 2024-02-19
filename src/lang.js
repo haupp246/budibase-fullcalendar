@@ -3,7 +3,7 @@ export const langs =  [
         code: 'pt',
         week: {
             dow: 1,
-            doy: 4, 
+            doy: 4,
         },
         buttonText: {
             prev: 'Anterior',
@@ -104,6 +104,29 @@ export const langs =  [
         allDayText: 'Toute la journée',
         moreLinkText: 'en plus',
         noEventsText: 'Aucun évènement à afficher',
+    },
+    {
+        code: 'vi',
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4, // The week that contains Jan 4th is the first week of the year.
+        },
+        buttonText: {
+            prev: 'Trước',
+            next: 'Tiếp',
+            today: 'Hôm nay',
+            year: 'Năm',
+            month: 'Tháng',
+            week: 'Tuần',
+            day: 'Ngày',
+            list: 'Lịch biểu',
+        },
+        weekText: 'Tu',
+        allDayText: 'Cả ngày',
+        moreLinkText(n) {
+            return '+ thêm ' + n
+        },
+        noEventsText: 'Không có sự kiện để hiển thị',
     },
     {
     code: 'de',
@@ -319,12 +342,12 @@ export const langs =  [
 
 export function codeLang(lang) {
     const code = langs.findIndex(item => item.code === lang);
-    
+
     if (code === -1) {
         console.warn(`Unknown language code: ${lang}`);
         return null;
     }
-    
+
     console.log(code, 'code', lang);
     return code;
 }
